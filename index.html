@@ -28,7 +28,64 @@ border-radius: 40%;
 border: 6px solid yellow;
 margin-top:10px;
 }
-
+.table-style1{
+width:80%;
+margin:20px auto;
+border: 2px solid navy;
+}
+.table-style1 th, .table-style1 td{
+border: 1px solid navy;
+padding:10px;
+text-align: center;
+}
+.table-style1 th{
+background-color: lightblue;
+}
+.t-style2{
+width:60%;
+margin:20px auto;
+border-collapse:collapse;
+border: 2px solid darkgreen;
+}
+.t-style2 th, .t-style2 td{
+border:1px solid darkgreen;
+padding:10px;
+text-align: center;
+}
+.t-style2 th{
+background-color: lightgreen;
+}
+.about{
+width:60%;
+margin:20px auto;
+text-align:left;
+}
+div.mycontainer{
+width:60%
+overflow:auto;
+}
+div.mycontainer div{
+width:50%;
+float:left;
+}
+.video{
+width:45%;
+margin:10px auto;
+text-align:center;
+border:3px solid green;
+}
+.list-style1{
+list-style-type:square;
+color: darkblue;
+text-align:left;
+margin:20px;
+}
+.list-style2{
+list-style-type:circle;
+color: darkgreen;
+text-align:left;
+margin:20px;
+}
 </style>
 </head>
 <body>
@@ -41,17 +98,17 @@ Age:25ish
 Location: kansas city.
 </pre>
 </header>
-<section>
+<section class="about">
 <p>Check out my favorite website:
 <a href="https://www.youtube.com" target="_blank"> For your enjoyment </a>
 </p>
 <a href="mailto: javonhunter22@yahoo.com" target= "_blank"> javonhunter22@yahoo.com</a>
 <a href="https://www.chiefs.com" target="_blank">
-<img src="https://github.com/javonhunter/first-web-page/blob/main/kc.png?raw=true" alt= "sample image"></a>
+<img src="https://github.com/javonhunter/first-web-page/blob/main/kc.png?raw=true" alt= "sample image" title="picture title"></a>
 </section>
 <hr>
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -67,7 +124,7 @@ Location: kansas city.
 </table>
 <hr>
 <h2>My favorite Movies</h2>
-<table>
+<table class="t-style2">
 <tr>
 <th>Movie</th>
 <th>Year</th>
@@ -82,22 +139,27 @@ Location: kansas city.
 </tr>
 </table>
 <hr>
-<h2>My favorite foods</h2>
-<ul>
+<div class="mycontainer">
+<div>
+<h2>my favorite foods</h2>
+<ul class= list-style1>
 <li>pizza</li>
 <li>Spaghetti and fish</li>
 <li>Fried Chicken</li>
 </ul>
-<hr>
+</div>
+<div>
 <h2>My favortie drinks</h2>
-<ul>
+<ul class= list-style2>
 <li>Apple juice</li>
 <li>Orange Juice</li>
 <li>Water</li>
 </ul>
-<section>
+</div>
+</div>
+<section class= "video">
 <h2>My favorite video</h2>
-<video width="560" height="360" controls>
+<video width="480" height="360" controls>
 <source src="https://github.com/javonhunter/first-web-page/blob/main/Cats%20Video.mp4?raw=true">
 your browser does notsupport the video tag.
 </video>
@@ -107,4 +169,5 @@ your browser does notsupport the video tag.
 <iframe width="660" height="371" src="https://www.youtube.com/embed/L3vbzYdIiqQ"></iframe>
 </body>
 </html>
+
 
